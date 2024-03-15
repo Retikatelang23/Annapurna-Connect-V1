@@ -1,0 +1,259 @@
+ 
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aboutUs{
+  margin-top: 45%;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  background-color: rgb(114, 125, 56);
+  color: whitesmoke;
+  font-style: italic;
+}
+
+.Questions{
+  font-size: larger;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-style: italic;
+  background-color: rgb(212, 222, 159);
+  margin: 30px 450px;
+}
+
+.Answers{
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px; /* Adjust as needed */
+}
+
+.vision-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 60%;
+  margin: 0 129px; /* Adjust the gap between circles */
+  background-color: rgb(114, 125, 56);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vision-heading {
+  text-align: center;
+  display: flex;
+  margin: 40px 240px;
+  position: absolute;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.vision{
+  margin-top: 5%;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  background-color: rgb(114, 125, 56);
+  color: whitesmoke;
+  font-style: italic;
+}
+
+.heading{
+  margin: 0px 100px;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(212, 222, 159);
+}
+
+.services{
+  margin-top: 12%;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  background-color: rgb(114, 125, 56);
+  color: whitesmoke;
+  font-style: italic;
+}
+
+/*realtime*/
+.real-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 90px auto;
+  max-width: 700px;
+  height: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(212, 222, 159);
+}
+
+.realtime-img {
+  flex: 0.8;
+}
+
+.realtime-img img {
+  max-width: 70%;
+  height: auto;
+  padding-left: 40px;
+}
+
+.realtime-container {
+  flex: 0.8;
+}
+
+.realtime-container h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.realtime-container h3 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.realtime-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+  padding-left: 25px;
+}
+
+/*bidding system*/
+.bidding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 90px auto;
+  max-width: 700px;
+  height: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(212, 222, 159);
+}
+
+.bidding-img {
+  flex: 0.8;
+}
+
+.bidding-img img {
+  max-width: 70%;
+  height: auto;
+  padding-left: 40px;
+}
+
+.bidding-container {
+  flex: 0.8;
+}
+
+.bidding-container h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.bidding-container h3 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.bidding-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+  padding-left: 25px;
+}
+
+/*cold Storage system*/
+.coldStorage-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 90px auto;
+  max-width: 700px;
+  height: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(212, 222, 159);
+}
+
+.coldStorage-img {
+  flex: 0.8;
+}
+
+.coldStorage-img img {
+  max-width: 70%;
+  height: auto;
+  padding-left: 40px;
+}
+
+.coldStorage-container {
+  flex: 0.8;
+}
+
+.coldStorage-container h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.coldStorage-container h3 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.coldStorage-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+  padding-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

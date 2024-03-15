@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  position: relative;
+  background-color: rgb(114, 125, 56);
+}
+
+.logo-container h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  background-color: rgb(212, 222, 159);
+  font-style: italic;
+}
+
+.nav-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  cursor: pointer ;
+}
+
+.nav-list li {
+  margin-right: 1rem; /* Adjust spacing between list items */
+  font-size: 1.5rem; /* Adjust font size as needed */
+  cursor: pointer;
+  background-color: rgb(212, 222, 159);
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .nav-list {
+    display: flex;
+  }
+}
+
+.navbar-main{
+  z-index: 5;
+}
+
+/* Remove underline from all React Router Link components */
+a {
+  color: black;
+  text-decoration: none;
+  border-radius: 2rem;
+}
+
+a:hover{
+  color: rgb(159, 202, 42);
+}
