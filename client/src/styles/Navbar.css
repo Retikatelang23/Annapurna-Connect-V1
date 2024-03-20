@@ -23,6 +23,19 @@
   font-style: italic;
 }
 
+.dropbtn{
+  margin-right: 0rem; /* Adjust spacing between list items */
+  font-size: 1.5rem; /* Adjust font size as needed */
+  cursor: pointer;
+  background-color: rgb(212, 222, 159);
+  border: none;
+  font-style: italic;
+  font-family: 'crossorigin';
+  padding-right: 3%;
+  align-items: center;
+  padding-left: 11%;
+}
+
 .nav-list {
   display: none;
   margin: 0;
