@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app-wrapper">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage/>} />
           <Route path="/login" element={<LoginPage/>} />
           <Route path="/signup" element={<Register/>} />
           <Route path="/landingpage" element={<LandingPage/>}/>

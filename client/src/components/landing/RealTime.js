@@ -1,25 +1,82 @@
 import React from 'react'
+import { useState } from 'react';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 const RealTime = () => {
 
-  //   const [myData, setMyData] = useState([]);
+  const [selectedDate, setSelectedDate] = useState(new Date().toISOString().slice(0, 10));
+  const [vegetableData, setVegetableData] = useState([]);
+  
+  useEffect(() => {
+    callApi();
+  }, [selectedDate]);
 
-  //   useEffect( () => {
-  //       fetch('https://cors-anywhere.herokuapp.com/https://vegetablemarketprice.com/api/dataapi/market/maharashtra/daywisedata?date=2024-03-15')
-  // .then(response => response.json())
-  // .then(data => console.log(data))
-  // .catch(error => console.error('Error fetching data:', error));
-  //   }, [])
+  const handleDateChange = (event) => {
+    setSelectedDate(event.target.value);
+    setRequestData({
+      date: event.target.value,
+    })
+  };
+
+  const [responseData, setResponseData] = useState(null);
+  const [requestData, setRequestData] = useState({
+    date: selectedDate,
+  });
+
+  const callApi = async () => {
+    console.log('Inside callAPI');
+    try {
+      console.log(requestData);
+      const response = await axios.post('http://localhost:8080/api/fetchRealtimeData', requestData);
+      console.log('Response', response);
+      setVegetableData(response.data.data);
+      console.log('Vegetable data', vegetableData);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  // useEffect(() => {
+  //   callApi(); // Call the API when the component is mounted
+  // },[]); // Empty dependency array ensures this effect runs only once
   return (
     <div>
-      {/* <table>
-        <ul>
-            {myData.map((vegetableprice, price) => (
-                <li key={price}>{vegetableprice.id} | {vegetableprice.name}</li>
-            ))}
-        </ul>
-      </table> */}
+    <div className="container">
+      <h1>Realtime vegetable price data</h1>
+      <div className="date-filter">
+        <label htmlFor="date">Choose a date: </label>
+        <input 
+          type="date" 
+          id="date" 
+          value={selectedDate} 
+          onChange={handleDateChange} 
+        />
+      </div>
     </div>
+          <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Vegetable</th>
+                <th>Price</th>
+                <th>Retail Price</th>
+                <th>Unit</th>
+              </tr>
+            </thead>
+            <tbody>
+              {vegetableData.map((vegetable, index) => (
+                <tr key={index}>
+                  <td>{vegetable.vegetablename}</td>
+                  <td>{vegetable.price}</td>
+                  <td>{vegetable.retailprice}</td>
+                  <td>{vegetable.units}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
   )
 }
 
