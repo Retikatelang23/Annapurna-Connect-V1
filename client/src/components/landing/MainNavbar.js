@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import "../../styles/MainNavbar.css";
 import RealTime from './RealTime';
+import MyProductMain from './myProductsSection/MyProductMain';
 
 const MainNavbar = () => {
   return (
@@ -16,7 +17,7 @@ const MainNavbar = () => {
             <Link to="/landingpage">Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="/myproducts">My Products</Link>
+            <Link to="/myproducts" element={<MyProductMain/>}>My Products</Link>
           </li>
           <li className="nav-item">
             <Link to="/realtime" element={<RealTime/>}>Real Time Prices</Link>

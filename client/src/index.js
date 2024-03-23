@@ -7,7 +7,10 @@ import { Toaster } from "react-hot-toast";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render( 
 <BrowserRouter>
+  <React.Suspense fallback="loading...">
   <App />
+  </React.Suspense>
+  
   <Toaster/>
 </BrowserRouter>
 );

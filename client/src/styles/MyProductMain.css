@@ -1,0 +1,62 @@
+.addProducts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: rgb(212, 222, 159);
+    width: 500px; 
+    text-align: center;
+    margin-left: 35%;
+}
+
+.addProducts:hover{
+    color: rgb(114, 125, 56);
+}
+
+.productForm{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 30%;
+    margin-top: 20px;
+    margin-left: 35%;
+}
+
+.productheading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.productLabel{
+    padding-left: 20px;
+    font-size: 25px;
+    margin-top: 9px;
+}
+
+.productInput{
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.makeEntry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.goBack{
+    font-size: 20px;
+    margin-left: 20%;
+    margin-top: 30px;
+}
