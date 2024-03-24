@@ -1,24 +1,9 @@
 import React from "react";
 import "../../styles/Navbar.css";
 import { Link } from "react-router-dom";
-// import { useState } from "react";
 
 
 const Navbar = () => {
-
-  // const [selectedOption, setSelectedOption] = useState('');
-  // const { i18n } = useTranslation();
-
-  // const handleOptionChange = (event) => {
-  //   setSelectedOption(event.target.value);
-  //   i18n.changeLanguage(event.target.value);
-  // };
-  
-  // const changeLanguage = (selectedOption) => {
-  //   i18n.changeLanguage(selectedOption);
-  // }
-
-  // value={selectedOption} onChange={handleOptionChange}
 
   return (
     <div className="navbar-main">
@@ -36,9 +21,6 @@ const Navbar = () => {
               </select>
           </li>
 
-          <li>
-            <Link to="/login"></Link>
-          </li>
           <li className="nav-item">
             <Link to="/landingpage">Login</Link>
           </li>
