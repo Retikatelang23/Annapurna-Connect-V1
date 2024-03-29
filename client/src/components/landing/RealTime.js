@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
+import MainNavbar from "../landing/MainNavbar"
 
 const RealTime = () => {
 
@@ -42,7 +43,8 @@ const RealTime = () => {
   // },[]); // Empty dependency array ensures this effect runs only once
   return (
     <div>
-    <div className="container">
+      <MainNavbar/>
+    <div className="realtime-div">
       <h1>Realtime vegetable price data</h1>
       <div className="date-filter">
         <label htmlFor="date">Choose a date: </label>
