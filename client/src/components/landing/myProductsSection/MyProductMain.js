@@ -24,20 +24,21 @@ const MyProductMain = () => {
   return (
     <div>
       <MainNavbar />
-      <h1>
+      <h1 >
         <Link to="/addproducts" className="addProducts" element={<AddProducts/>}>Click To Add Your Products</Link>
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
       {products.map(product => (
-        <div key={product._id} className="bg-gray-100 p-4 rounded">
+        <div key={product._id} className="bg-slate-100 p-4 rounded card">
           <img
             src={product.productImage}
             alt={product.name}
-            className="w-full h-48 object-cover mb-4 rounded"
+            className="w-full h-48 object-cover mb-4 rounded "
           />
-          <h3 className="text-lg font-semibold mb-2">{product.productname}</h3>
-          <p className="text-gray-600 mb-2">Quantity(in Kg): {product.quantityInKg}</p>
-          <p className="text-gray-600">Price(per Kg): {product.priceperKg}</p>
+          <h3 className="text-lg font-semibold mb-2 ">{product.productname}</h3>
+          <p className="">Quantity(in Kg): {product.quantityInKg}</p>
+          <p className="">Price(per Kg): {product.priceperKg}</p>
+          <button className="delete-btn">Remove The Product</button>
         </div>
       ))}
     </div>

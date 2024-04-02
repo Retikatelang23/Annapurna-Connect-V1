@@ -8,8 +8,8 @@
 }
 
 .signup_form_container {
-	width: 900px;
-	height: 500px;
+	width: 1000px;
+	height: 600px;
 	display: flex;
 	border-radius: 10px;
 	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
@@ -33,6 +33,10 @@
 	color: white;
 	font-size: 35px;
 	align-self: center;
+}
+
+.radio-btn{
+	background-color: rgb(114, 125, 56);
 }
 
 .right {
@@ -60,12 +64,16 @@
 .input {
 	outline: none;
 	border: none;
-	width: 370px;
+	width: 250px;
 	padding: 15px;
 	border-radius: 10px;
 	background-color: rgb(114, 125, 56);
 	margin: 5px 0;
 	font-size: 14px;
+}
+
+.input::placeholder{
+	color: #ffff;
 }
 
 .error_msg {
@@ -100,3 +108,5 @@
 	margin: 10px;
 	font-size: larger;
 }
+
+	

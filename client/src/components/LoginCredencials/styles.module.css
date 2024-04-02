@@ -51,6 +51,10 @@
 	font-size: 14px;
 	margin-bottom: 20px;
 }
+
+.input::placeholder{
+	color: #ffff;
+}
 *::placeholder{
 	color: white;
 }

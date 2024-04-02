@@ -6,20 +6,26 @@ import Navbar from "../../components/home/Navbar";
 import toast from "react-hot-toast";
 
 const Signup = () => {
-  /* Name, username, Password, confirm Password, 
-  E-mail Address, Confirm E-mail address, captcha(),
-   Aadhar Card, Address 1(), Address 2(optional), city, 
+  /* Name,lastname, username,email, Password, confirm Password, 
+   captcha(), Aadhar Card, age, Address 1(), Address 2(optional), city, 
    Postal(pin code), Phone no., About Me (Optional) */
 
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
+    UserName: "",
     email: "",
     password: "",
-    // MobileNumber: "",
-    // AdharCardNumber: "",
-    // Age: "",
-    // gender: "",
+    confirmPassword: "",
+    adharCardNumber: "",
+    age: "",
+    address1: "",
+    address2: "",
+    city: "",
+    postalCode: "",
+    phoneNumber: "",
+    gender: "",
+    choose: "",
   });
 
   const [error, setError] = useState("");
@@ -65,78 +71,167 @@ const Signup = () => {
           <div className={styles.right}>
             <form className={styles.form_container} onSubmit={handleSubmit}>
               <h1>Create Account</h1>
+
+              <div className="flex gap-3">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  name="firstName"
+                  onChange={handleChange}
+                  value={data.firstName}
+                  required
+                  className={styles.input}
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  name="lastName"
+                  onChange={handleChange}
+                  value={data.lastName}
+                  required
+                  className={styles.input}
+                />
+              </div>
+
+              <div className="flex gap-3">
+                <input
+                  type="text"
+                  placeholder="UserName"
+                  name="UserName"
+                  onChange={handleChange}
+                  value={data.UserName}
+                  required
+                  className={styles.input}
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  onChange={handleChange}
+                  value={data.email}
+                  required
+                  className={styles.input}
+                />
+              </div>
+
+              <div className="flex gap-3">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  onChange={handleChange}
+                  value={data.password}
+                  required
+                  className={styles.input}
+                />
+
+                <input
+                  type="password"
+                  placeholder="Confirm Password"
+                  name="confirmPassword"
+                  onChange={handleChange}
+                  value={data.confirmPassword}
+                  required
+                  className={styles.input}
+                />
+              </div>
+
+              <div className="flex gap-3">
+                <input
+                  type="text"
+                  placeholder="Adhar Card Number"
+                  name="adharCardNumber"
+                  onChange={handleChange}
+                  value={data.adharCardNumber}
+                  required
+                  className={styles.input}
+                />
+
+                <input
+                  type="number"
+                  placeholder="Age"
+                  name="age"
+                  onChange={handleChange}
+                  value={data.age}
+                  required
+                  className={styles.input}
+                />
+              </div>
+
+              <div className="flex gap-3">
+                <input
+                  type="text"
+                  placeholder="Address - 1"
+                  name="address1"
+                  onChange={handleChange}
+                  value={data.address1}
+                  required
+                  className={styles.input}
+                />
+                <input
+                  type="text"
+                  placeholder="Address - 2(optional)"
+                  name="address2"
+                  onChange={handleChange}
+                  value={data.address2}
+                  className={styles.input}
+                />
+              </div>
+
+              <div className="flex gap-3">
+                <input
+                  type="text"
+                  placeholder="City"
+                  name="city"
+                  onChange={handleChange}
+                  value={data.city}
+                  required
+                  className={styles.input}
+                />
+                <input
+                  type="number"
+                  placeholder="Postal Pincode"
+                  name="postalCode"
+                  onChange={handleChange}
+                  value={data.postalCode}
+                  required
+                  className={styles.input}
+                />
+              </div>
+
+              <div className="flex gap-3">
+                <input
+                  type="number"
+                  placeholder="Phone Number"
+                  name="phoneNumber"
+                  onChange={handleChange}
+                  value={data.phoneNumber}
+                  required
+                  className={styles.input}
+                />
+                <input
+                  type="text"
+                  placeholder="Gender / female / male / other"
+                  name="gender"
+                  onChange={handleChange}
+                  value={data.gender}
+                  required
+                  className={styles.input}
+                />
+              </div>
+
+              <div >
               <input
-                type="text"
-                placeholder="First Name"
-                name="firstName"
-                onChange={handleChange}
-                value={data.firstName}
-                required
-                className={styles.input}
-              />
-              <input
-                type="text"
-                placeholder="Last Name"
-                name="lastName"
-                onChange={handleChange}
-                value={data.lastName}
-                required
-                className={styles.input}
-              />
-              {/* <input
-                type="text"
-                placeholder="Mobile Number"
-                name="MobileNumber"
-                onChange={handleChange}
-                value={data.MobileNumber}
-                required
-                className={styles.input}
-              /> */}
-              {/* <input
-                type="text"
-                placeholder="Adhar Card Number"
-                name="AdharCardNumber"
-                onChange={handleChange}
-                value={data.AdharCardNumber}
-                required
-                className={styles.input}
-              />*/}
-              <input
-                type="email"
-                placeholder="Email"
-                name="email"
-                onChange={handleChange}
-                value={data.email}
-                required
-                className={styles.input}
-              />
-              {/*<input
-                type="text"
-                placeholder="Age"
-                name="Age"
-                onChange={handleChange}
-                value={data.Age}
-                required
-                className={styles.input}
-              />
-               <input
-                type="text"
-                placeholder="Gender: Female / Male / Other"
-                name="gender"
-                onChange={handleChange}
-                value={data.gender}	
-                required
-                className={styles.input}
-              /> */}
-              <input
-                type="password"
-                placeholder="Password"
-                name="password"
-                onChange={handleChange}
-                value={data.password}
-                required
-                className={styles.input}
-              />
+                  type="text"
+                  placeholder="Login As a farmer / buyer"
+                  name="choose"
+                  onChange={handleChange}
+                  value={data.choose}
+                  required
+                  className={styles.input}
+                />
+              </div>
+
               {error && <div className={styles.error_msg}>{error}</div>}
               <button type="submit" className={styles.green_btn}>
                 Sign Up

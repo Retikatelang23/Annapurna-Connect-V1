@@ -28,9 +28,6 @@ const MainNavbar = () => {
           <li className="nav-item">
             <Link to="/coldstorage">Cold Storage</Link>
           </li>
-          <li className="nav-item">
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
         </ul>
       </div>
     </div>

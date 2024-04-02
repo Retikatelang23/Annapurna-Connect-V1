@@ -7,6 +7,7 @@
     width: 500px; 
     text-align: center;
     margin-left: 35%;
+    font-size: 25px;
 }
 
 .addProducts:hover{
@@ -60,3 +61,10 @@
     margin-left: 20%;
     margin-top: 30px;
 }
+
+.delete-btn{
+    background-color: rgb(114, 125, 56);
+    color: white;
+}
+
+/*   */

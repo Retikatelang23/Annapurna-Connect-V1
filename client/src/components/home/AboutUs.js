@@ -3,21 +3,22 @@ import "../../styles/AboutUs.css";
 import clock from "../../assets/clock.png";
 import bidding from "../../assets/bid.png";
 import coldStorage from "../../assets/coldStorage.png";
-import LanguageSelector from "../LanguageTranslator/LanguageSelector";
-import { useTranslation } from "react-i18next";
+// import LanguageSelector from "../LanguageTranslator/LanguageSelector";
+// import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
-  const {t} = useTranslation();
+  // const {t} = useTranslation();
 
-  const line1 = t("line1");
-  console.log(line1)
+  // const line1 = t("line1");
+  // console.log(line1)
   return (
     <div>
       {/* About Us */}
-      <LanguageSelector/>
+      {/* <LanguageSelector/> */}
       <div>
         <div className="aboutUs">About Us</div>
-        <h2 className="Questions">{t("line1")}</h2>
+        {/* <h2 className="Questions">{t("line1")}</h2> */}
+        <h2 className="Questions">What Exactly is Annapurna Connect?</h2>
 
         <p className="Answers">
           Welcome to Annapurna-Connect, a cutting-edge, 100% free platform
