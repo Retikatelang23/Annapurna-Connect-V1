@@ -26,14 +26,13 @@
 }
 
 .dropbtn {
-    margin-right: 0rem;
+    margin-right: 2rem;
     font-size: 1.5rem;
     cursor: pointer;
     background-color: rgb(212, 222, 159);
     border: none;
     font-style: italic;
     font-family: 'crossorigin';
-    padding-right: 3%;
     align-items: center;
     padding-left: 11%;
 }

@@ -1,0 +1,67 @@
+.realtime-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    background-color: rgb(212, 222, 159);
+    border-radius: 1rem;
+}
+
+.chooseData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+}
+
+.date-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212, 222, 159);
+    margin-top: 20px;
+    border-radius: 1rem;
+
+}
+
+.calender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(114, 125, 56);
+    font-size: 17px;
+    color: whitesmoke;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.table-container th{
+    background-color: rgb(114, 125, 56);
+    font-style: italic;
+    text-align: center;
+    padding: 20px 60px;
+    border-radius: 0.5rem;
+
+}
+.table-container td {
+    text-align: center;
+    padding: 20px 70px; /* Adjust the padding as needed */
+    border-radius: 0.5rem;
+}
+
+.table-container tr {
+    background-color: rgb(212, 222, 159);
+    height: fit-content;
+    border: 2px solid;  
+    border-radius: 0.5rem;
+
+}

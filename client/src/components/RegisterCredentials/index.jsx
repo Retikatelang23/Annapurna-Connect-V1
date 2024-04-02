@@ -6,6 +6,11 @@ import Navbar from "../../components/home/Navbar";
 import toast from "react-hot-toast";
 
 const Signup = () => {
+  /* Name, username, Password, confirm Password, 
+  E-mail Address, Confirm E-mail address, captcha(),
+   Aadhar Card, Address 1(), Address 2(optional), city, 
+   Postal(pin code), Phone no., About Me (Optional) */
+
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -31,7 +36,7 @@ const Signup = () => {
       const { data: res } = await axios.post(url, data);
       navigate("/landingpage");
       console.log(res.message);
-      toast.success("Account Created Successfully!")
+      toast.success("Account Created Successfully!");
     } catch (error) {
       if (
         error.response &&
@@ -45,7 +50,7 @@ const Signup = () => {
 
   return (
     <div>
-		<Navbar/>
+      <Navbar />
       <div className={styles.signup_container}>
         <div className={styles.signup_form_container}>
           <div className={styles.left}>
@@ -96,7 +101,7 @@ const Signup = () => {
                 required
                 className={styles.input}
               />*/}
-              <input 
+              <input
                 type="email"
                 placeholder="Email"
                 name="email"

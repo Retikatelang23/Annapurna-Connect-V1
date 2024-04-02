@@ -1,15 +1,20 @@
 import React from "react";
 import "../../styles/Navbar.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "../LanguageTranslator/LanguageSelector";
 
 
 const Navbar = () => {
 
+  const {t} = useTranslation();
+
   return (
     <div className="navbar-main">
+      <LanguageSelector/>
       <div className="container">
         <div className="logo-container">
-          <h1>Annapurna Connect</h1>
+          <h1>{t("greeting")}</h1>
         </div>
         <ul className="nav-list" id="navList">
         
@@ -25,7 +30,7 @@ const Navbar = () => {
             <Link to="/landingpage">Login</Link>
           </li>
           <li className="nav-item">
-            <Link to="/landingpage">Register</Link>
+            <Link to="/signup">Register</Link>
           </li>
         </ul>
       </div>

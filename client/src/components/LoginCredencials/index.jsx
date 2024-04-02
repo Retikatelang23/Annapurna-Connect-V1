@@ -22,6 +22,7 @@ const Login = () => {
       localStorage.setItem("token", res.data);
       window.location = "/landingpage";
       toast.success("Logged In");
+      navigate("/landingpage");
     } catch (error) {
       if (
         error.response &&

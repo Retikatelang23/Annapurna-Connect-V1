@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
 import MainNavbar from "../landing/MainNavbar"
+import "../../styles/RealTime.css"
 
 const RealTime = () => {
 
@@ -44,15 +45,16 @@ const RealTime = () => {
   return (
     <div>
       <MainNavbar/>
-    <div className="realtime-div">
-      <h1>Realtime vegetable price data</h1>
+    <div >
+      <h1 className="realtime-heading">Realtime vegetable price data</h1>
       <div className="date-filter">
-        <label htmlFor="date">Choose a date: </label>
+        <label className='chooseData' htmlFor="date">Choose a date: </label>
         <input 
           type="date" 
           id="date" 
           value={selectedDate} 
           onChange={handleDateChange} 
+          className='calender'
         />
       </div>
     </div>
