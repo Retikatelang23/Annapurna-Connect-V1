@@ -7,7 +7,12 @@ import Register from "./components/RegisterCredentials/index";
 import RealTime from "./components/landing/RealTime";
 import MyProductMain from "./components/landing/myProductsSection/MyProductMain";
 import AddProducts from "./components/landing/myProductsSection/AddProducts";
+<<<<<<< HEAD
 import LandingPage from "./components/landing/LandingPageIntegration/LandingPage";
+=======
+import ColdStorage from "./components/landing/ColdStorage";
+
+>>>>>>> f99ab1133d037267c4050a07790be5dba90974cf
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
@@ -30,6 +35,7 @@ function App() {
         <Route path="/realtime" element={<RealTime />} />
         <Route path="/myproducts" element={<MyProductMain />} />
         <Route path="/addproducts" element={<AddProducts />} />
+        <Route path="/coldstorage" element={<ColdStorage />} />
       </Routes>
     </div>
   );
