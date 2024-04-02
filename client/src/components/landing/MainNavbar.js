@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../../styles/MainNavbar.css";
 import RealTime from './RealTime';
 import MyProductMain from './myProductsSection/MyProductMain';
+import ColdStorage  from './ColdStorage';
 
 const MainNavbar = () => {
   return (
@@ -26,7 +27,7 @@ const MainNavbar = () => {
             <Link to="/bidding">Bidding System</Link>
           </li>
           <li className="nav-item">
-            <Link to="/coldstorage">Cold Storage</Link>
+            <Link to="/coldstorage" element = {<ColdStorage/>}>Cold Storage</Link>
           </li>
         </ul>
       </div>

@@ -8,6 +8,8 @@ import LandingPage from "../src/components/landing/LandingPage";
 import RealTime from "./components/landing/RealTime";
 import MyProductMain from "./components/landing/myProductsSection/MyProductMain";
 import AddProducts from "./components/landing/myProductsSection/AddProducts";
+import ColdStorage from "./components/landing/ColdStorage";
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
@@ -30,6 +32,7 @@ function App() {
         <Route path="/realtime" element={<RealTime />} />
         <Route path="/myproducts" element={<MyProductMain />} />
         <Route path="/addproducts" element={<AddProducts />} />
+        <Route path="/coldstorage" element={<ColdStorage />} />
       </Routes>
     </div>
   );
