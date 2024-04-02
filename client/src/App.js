@@ -4,10 +4,10 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/home/HomePage";
 import LoginPage from "./components/LoginCredencials/index";
 import Register from "./components/RegisterCredentials/index";
-import LandingPage from "../src/components/landing/LandingPage";
 import RealTime from "./components/landing/RealTime";
 import MyProductMain from "./components/landing/myProductsSection/MyProductMain";
 import AddProducts from "./components/landing/myProductsSection/AddProducts";
+import LandingPage from "./components/landing/LandingPageIntegration/LandingPage";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
