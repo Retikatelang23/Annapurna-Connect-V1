@@ -6,10 +6,8 @@ const HomepageVIdeo = () => {
   return (
     <div className="main">
       <div className="overlay"></div>
-      <video className="video" src={farmingVideo} autoPlay loop muted />
+      <video className="video" src={farmingVideo} autoPlay loop/>
       <div className="content">
-        <h1>Welcome</h1>
-        <p>To my site.</p>
       </div>
     </div>
   );
