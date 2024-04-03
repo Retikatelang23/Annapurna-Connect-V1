@@ -23,9 +23,9 @@ const MainNavbar = () => {
           <li className="nav-item">
             <Link to="/realtime" element={<RealTime/>}>Real Time Prices</Link>
           </li>
-          <li className="nav-item">
-            <Link to="/bidding">Bidding System</Link>
-          </li>
+          {/* <li className="nav-item">
+            <Link to="/bidding" >Bidding System</Link>
+          </li> */}
           <li className="nav-item">
             <Link to="/coldstorage" element = {<ColdStorage/>}>Cold Storage</Link>
           </li>

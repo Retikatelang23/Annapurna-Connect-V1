@@ -1,0 +1,11 @@
+.video{
+    align-items: center;
+    /* margin-left: 9%; */
+    width: 100vw;
+}
+
+.main{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

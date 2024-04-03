@@ -1,7 +1,12 @@
 .ColdStorageMap {
-    height: 100vh; /* Adjust height as needed */
+    height: 65vh; /* Adjust height as needed */
 }
 
-.MapBhaisahab {
-    height: 500vh;
+
+.cold-storage-heading{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
 }

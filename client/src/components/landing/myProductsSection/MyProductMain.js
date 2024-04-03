@@ -38,7 +38,7 @@ const MyProductMain = () => {
           <h3 className="text-lg font-semibold mb-2 ">{product.productname}</h3>
           <p className="">Quantity(in Kg): {product.quantityInKg}</p>
           <p className="">Price(per Kg): {product.priceperKg}</p>
-          <button className="delete-btn">Remove The Product</button>
+          
         </div>
       ))}
     </div>

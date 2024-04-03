@@ -1,16 +1,20 @@
-// ColdStorage.js
-
 import React, { useState } from 'react';
 import MainNavbar from './MainNavbar';
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
-// import './ColdStorage.css'; // Import CSS file for styling
+import "../../styles/ColdStorage.css"
 
 const ColdStorage = (props) => {
-    // Array of new cold storage locations
+    // Array of new cold storage locations including Jalochi and Shikrapur
     const coldStorageLocations = [
-        { id: 1, name: 'Cold Storage Jalgaon', lat: 21.191605104979608, lng: 75.56816914861304, details: 'Jalgaon location details' }, // Jalgaon coordinates
-        { id: 2, name: 'Cold Storage Varhane', lat: 20.745198118681103, lng: 74.50035104532883, details: 'Varhane location details' }, // Varhane coordinates
-        { id: 3, name: 'Cold Storage Navi Mumbai', lat: 19.286517021420465, lng: 73.00689709357405, details: 'Navi Mumbai location details' }, // Navi Mumbai coordinates
+        { id: 1, name: 'Cold Storage Mumbai', lat: 19.224286645107405, lng: 73.02886975040192, details: 'Mumbai location details' },
+        { id: 2, name: 'Cold Storage Kurli', lat: 18.802760763335005, lng: 73.8427853201517, details: 'Kurli location details' },
+        { id: 3, name: 'Cold Storage Wai', lat: 18.184344830058187, lng: 73.91170382217533, details: 'Wai location details' },
+        { id: 4, name: 'Cold Storage Ganeshwadi', lat: 17.77680487318701, lng: 74.41707492921616, details: 'Ganeshwadi location details' },
+        { id: 5, name: 'Cold Storage Kolhapur', lat: 16.83280391267412, lng: 74.28523898824898, details: 'Kolhapur location details' },
+        { id: 6, name: 'Cold Storage Chandrapur', lat: 20.24938235144244, lng: 79.24973044394945, details: 'Chandrapur location details' },
+        { id: 7, name: 'Cold Storage Nagpur', lat: 21.166003300161314, lng: 79.19386621928413, details: 'Nagpur location details' },
+        { id: 8, name: 'Cold Storage Jalochi', lat: 18.21949071924498, lng: 74.59442577014593, details: 'Jalochi location details' }, // Jalochi coordinates
+        { id: 9, name: 'Cold Storage Shikrapur', lat: 18.854882855932416, lng: 74.11102731993294, details: 'Shikrapur location details' }, // Shikrapur coordinates
         // Add more cold storage locations here if needed
     ];
 
@@ -33,13 +37,13 @@ const ColdStorage = (props) => {
     return (
         <div>
             <MainNavbar />
-            <div className='MapBhaisahab'>
-                <h1>Cold Storage Locations</h1>
+            <div className='Map-window'>
+                <h1 className='cold-storage-heading'>Cold Storage Locations</h1>
                 <div className='ColdStorageMap'>
                     <Map
                         google={props.google}
                         zoom={8} // Adjust zoom level as needed
-                        initialCenter={{ lat: 21.191605104979608, lng: 75.56816914861304 }} // Initial center (Jalgaon coordinates)
+                        initialCenter={{ lat: 19.224286645107405, lng: 73.02886975040192 }} // Initial center (Mumbai coordinates)
                     >
                         {/* Add Marker for each cold storage location */}
                         {coldStorageLocations.map(location => (
