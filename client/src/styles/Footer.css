@@ -4,7 +4,7 @@
     padding: 4rem 1rem;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgb(114, 125, 56);
   }
   
   .content {
@@ -14,7 +14,7 @@
   .title {
     font-size: 3rem;
     font-weight: bold;
-    color: #00df9a;
+    color: #ffff;
   }
   
   .description {
@@ -56,3 +56,14 @@
     color: #ccc;
   }
   
+.mail-section{
+  margin-top: 15px;
+}
+
+.phoneCall-section{
+  margin-top: 15px;
+}
+
+.location-section{
+  margin-top: 15px;
+}

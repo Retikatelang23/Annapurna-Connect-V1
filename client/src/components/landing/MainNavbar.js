@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import "../../styles/MainNavbar.css";
 import RealTime from './RealTime';
-import MyProductMain from './myProductsSection/MyProductMain';
 import ColdStorage  from './ColdStorage';
 
 const MainNavbar = () => {
@@ -17,15 +16,15 @@ const MainNavbar = () => {
           <li className="nav-item">
             <Link to="/landingpage">Home</Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link to="/myproducts" element={<MyProductMain/>}>My Products</Link>
-          </li>
+          </li> */}
           <li className="nav-item">
             <Link to="/realtime" element={<RealTime/>}>Real Time Prices</Link>
           </li>
-          {/* <li className="nav-item">
-            <Link to="/bidding" >Bidding System</Link>
-          </li> */}
+          <li className="nav-item">
+            <Link to="http://localhost:3000/" target='_blank'>Bidding System</Link>
+          </li>
           <li className="nav-item">
             <Link to="/coldstorage" element = {<ColdStorage/>}>Cold Storage</Link>
           </li>

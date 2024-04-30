@@ -1,17 +1,30 @@
 import React from "react";
-import "../../styles/Footer.css"
+import "../../styles/Footer.css";
+import mapPin from "../../assets/map-pin.svg";
+import mail from "../../assets/mail.svg"
+import phoneCall from "../../assets/phoneCall.svg"
 
 const Footer = () => {
   return (
     <div>
       <div class="footer-container">
         <div class="content">
-          <h1 class="title">REACT.</h1>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odit
-            ullam iste repellat consequatur libero reiciendis, blanditiis
-            accusantium.
-          </p>
+          <h1 class="title">Get In Touch</h1>
+          <div className="flex gap-3 location-section">
+            <img className="location-img" src={mapPin}></img>
+            <p class="text-white mb-0">Location, City, Country</p>
+          </div>
+
+          <div className="flex gap-3 mail-section">
+            <img src={mail}></img>
+            <p class="text-white mb-0">annapurnaConnect@gmail.com</p>
+          </div>
+
+          <div className="flex gap-3 phoneCall-section">
+            <img src={phoneCall}></img>
+            <p class="text-white mb-0">+91 1234567890</p>
+          </div>
+
           <div class="social-icons">
             <a href="#">
               <i class="fab fa-facebook-square"></i>

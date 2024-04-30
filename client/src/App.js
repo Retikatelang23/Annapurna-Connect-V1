@@ -5,8 +5,6 @@ import HomePage from "./components/home/HomePage";
 import LoginPage from "./components/LoginCredencials/index";
 import Register from "./components/RegisterCredentials/index";
 import RealTime from "./components/landing/RealTime";
-import MyProductMain from "./components/landing/myProductsSection/MyProductMain";
-import AddProducts from "./components/landing/myProductsSection/AddProducts";
 import LandingPage from "./components/landing/LandingPageIntegration/LandingPage";
 import ColdStorage from "./components/landing/ColdStorage";
 
@@ -30,8 +28,6 @@ function App() {
         />
         <Route path="/landingpage" element={<LandingPage />} />
         <Route path="/realtime" element={<RealTime />} />
-        <Route path="/myproducts" element={<MyProductMain />} />
-        <Route path="/addproducts" element={<AddProducts />} />
         <Route path="/coldstorage" element={<ColdStorage />} />
       </Routes>
     </div>
