@@ -7,6 +7,9 @@ import star from "../../../assets/star.png";
 import team from "../../../assets/team.png";
 import verified from "../../../assets/verified.png";
 import drink from "../../../assets/drink.png";
+import mapPin from "../../../assets/map-pin.svg";
+import mail from "../../../assets/mail.svg"
+import phoneCall from "../../../assets/phoneCall.svg"
 
 const AllLandingSections = () => {
   return (
@@ -60,7 +63,7 @@ const AllLandingSections = () => {
                   <img src={star}></img>
                 </div>
                 <div className="fact-content">
-                  <h5>Our Experience</h5>
+                  <h2>Our Experience</h2>
                   <Counterup initialValue={334} delay={10} duration={2000} />
                 </div>
               </div>
@@ -72,7 +75,7 @@ const AllLandingSections = () => {
                   <img src={team}></img>
                 </div>
                 <div className="fact-content">
-                  <h5>Farm Specialist</h5>
+                  <h2>Farm Specialist</h2>
                   <Counterup initialValue={450} delay={10} duration={2000} />
                 </div>
               </div>
@@ -84,7 +87,7 @@ const AllLandingSections = () => {
                   <img src={verified}></img>
                 </div>
                 <div className="fact-content">
-                  <h5>Complete Project</h5>
+                  <h2>Complete Project</h2>
                   <Counterup initialValue={267} delay={10} duration={2000} />
                 </div>
               </div>
@@ -96,7 +99,7 @@ const AllLandingSections = () => {
                   <img src={drink}></img>
                 </div>
                 <div className="fact-content">
-                  <h5>Happy Clients</h5>
+                  <h2>Happy Clients</h2>
                   <Counterup initialValue={382} delay={10} duration={2000} />
                 </div>
               </div>
@@ -111,17 +114,17 @@ const AllLandingSections = () => {
         <div class="content">
           <h1 class="title">Get In Touch</h1>
           <div className="flex gap-3 location-section">
-            <img className="location-img" ></img>
+            <img className="location-img" src={mapPin}></img>
             <p class="text-white mb-0">Location, City, Country</p>
           </div>
 
           <div className="flex gap-3 mail-section">
-            <img></img>
+            <img src={mail}></img>
             <p class="text-white mb-0">annapurnaConnect@gmail.com</p>
           </div>
 
           <div className="flex gap-3 phoneCall-section">
-            <img></img>
+            <img src={phoneCall}></img>
             <p class="text-white mb-0">+91 1234567890</p>
           </div>
 

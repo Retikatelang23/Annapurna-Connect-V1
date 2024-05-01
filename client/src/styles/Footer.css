@@ -5,6 +5,8 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(114, 125, 56);
+    height: 300px;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   .content {
